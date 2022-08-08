@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Followups Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@400;600&family=Recursive:wght@300;400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+    <!-- alert -->
+
+    <div>
+        <p></p>
+    </div>
+
+    <!-- The title for the body -->
+    <div class="row logo">
+        <div class="col-6">
+            <img class="logo2" src="images\allieddigital.png" alt="">
+        </div>
+
+        <div class="col-6">
+            <img class="logo1" src="images\1logo.png" alt="Accentcare Logo">
+        </div>
+    </div>
+
+
+    <div class="row1">
+
+        <div class="forms">
+
+            <div class="form form_r">
+                <form id="form">
+                    <input class="form_inputs name1" type="text" id="name1" name="Name" placeholder="Your Name"
+                        required><br>
+                    <input class="form_inputs reset" type="text" id="username" name="username"
+                        placeholder="User's Name"><br>
+                    <input class="form_inputs reset" type="text" id="tktnumber" name="tktnumber"
+                        placeholder="Ticker Number"><br>
+                    <div class="final_follow">
+                        <input onclick="checkBox()" type="checkbox" id="final" name="final" />
+                        <span class="lable">Check if Final-Followup</final-followup></span>
+                    </div>
+                    <div id="button_generate">
+                        <button id="button" type="submit" onclick="changeText(), main(), showDiv()">Generate</button>
+
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="reset" id="paragraph">
+
+            <div id="textcopy">
+
+                <p class="email_body">
+                    Hello <span class="abhi"> User </span>,<br><br>
+                    &nbspI hope you’re doing well. This is a <span id="finalFollowup"> Follow-up</span> email for your
+                    Ticket
+                    <span class="tkt1"> INC </span>, We tried to get in touch with you
+                    Please call the Service desk at <strong>(866) 364-8911 <em>(Select option 1)</em></strong> to get
+                    this Resolved
+                    If this has already been resolved, Please
+                    reply to this email with your confirmation.
+                </p>
+
+                <p class="signature">Thanks & Regards,<br>
+                    <span class="signature_name"> Accentcare SD</span><br>
+                    (866) 364-8911 (Option 1).<br><br>
+                    <span class="website"> www.accentcare.com </span>
+
+                </p>
+                <img class="signature_image" src="images/1logo.png" alt="Accentcare">
+            </div>
+            <div id="copy">
+                <button id="reset-form" type="button" onclick="location.reload()">Clear</button>
+                <!-- <button class="copy-button" onclick="copy()" >Copy</button> -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="error"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
