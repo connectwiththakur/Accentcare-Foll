@@ -7,18 +7,19 @@ html {
 
 .logo {
     margin: 0;
+    padding:0;
     background-color: #DEB6AB;
 }
 
 .logo1 {
-    position: left;
+    display:inline-block;
     /* display: inline-block; */
-    margin-left: 490px;
+    margin-left: 300px;
     width: 300px;
 }
 
 .logo2 {
-    position: relative;
+ 
     display: inline-block;
     /* margin-left: 8%; */
     width: 300px;
